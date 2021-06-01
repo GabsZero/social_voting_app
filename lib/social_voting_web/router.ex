@@ -17,6 +17,7 @@ defmodule SocialVotingWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/polls", PollController, :index
   end
 
   # Other scopes may use custom stacks.
